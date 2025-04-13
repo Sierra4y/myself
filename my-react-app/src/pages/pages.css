@@ -1,0 +1,13 @@
+.body {
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul{
+    padding-left:0;
+}
+  
+li{
+    list-style:none;
+}
