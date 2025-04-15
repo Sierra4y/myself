@@ -16,3 +16,28 @@ ul{
 li{
     list-style:none;
 }
+
+.box {
+    color: #000000;
+}
+
+.box h1 {
+    color: #8c19b9;
+}
+
+.box h2 {
+    color: #9a47bb;
+}
+
+.box h3 {
+    color: #a07aaf;
+}
+
+.box-sub {
+    color: #06aadb;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.4);
+    border: dashed 2px #ffc3c3;
+    border-radius: 8px;
+    padding: 10px;
+}
