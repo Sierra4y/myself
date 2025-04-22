@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    padding: 10px 20px;
+    padding: 0.3rem;
   }
   
   .nav-item {
@@ -15,12 +15,12 @@
   
   .nav-summary {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 
   .nav-summary:hover {
     text-decoration: none;
-    color: rgb(75, 75, 75);
+    color: rgb(161, 161, 161);
   }
   
   .nav-content {
@@ -28,11 +28,12 @@
     position: absolute;
     top: 100%;
     background-color: rgba(255, 255, 255, 0.3);
-    border: none;
+    border: 10px;
     border-radius: 100%;
+    border-color: rgb(243, 205, 255);
     padding: 10px;
     white-space: nowrap;
-    color: rgb(0, 198, 224);
+    color: rgb(0, 162, 255);
     font-weight: bold;
   }
   

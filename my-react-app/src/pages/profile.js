@@ -1,6 +1,6 @@
 import React from 'react';
-import './pages.css';
-import './pageimages.css'
+import './styles/pages.css';
+import './styles/pageimages.css'
 
 const Introduction = () => {
     return (
@@ -8,8 +8,18 @@ const Introduction = () => {
             <div className='box'>
                 <h1>沼田 優里</h1>
                 <img src="../images/mypic.png" className='mypic' alt="myself"/>
+                <div>
+                    <h3>出身地</h3>
+                    <p>三重県亀山市</p>
+                    <h3>生年月日</h3>
+                    <p>1998(H10)年4月11日</p>
+                    <h3>出身校</h3>
+                    <p>Brigham Young University - Hawaii</p>
+                    <h3>性格</h3>
+                    <p>心配性</p>
+                </div>
                 <div className='box-sub sub1'>
-                    <h2>♡Favorite things♡</h2>
+                    <h2>好きなもの</h2>
                         <h3>ダンス</h3>
                             <ul>
                                 <li>小学校1年生～小学校3年生    モダンダンス</li>
@@ -44,7 +54,7 @@ const Introduction = () => {
                             </p>
                 </div>
                 <div className='box-sub sub2'>
-                    <h2>week point</h2>
+                    <h2>苦手なもの</h2>
                         <h3>ホラー</h3>
                             <p>
                                 ホラー映画、ホラーゲーム、お化け屋敷、怖いもの全般苦手です

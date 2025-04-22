@@ -4,12 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/navbar';
 import About from './pages/about';
-import Introduction from './pages/introduction';
-import Background from './pages/background';
+import Profile from './pages/profile';
 import Skills from './pages/skills';
 import Appeal from './pages/appeal';
 import Portfolio from './pages/portfolio';
-import Bubble from './components/bubble'
+import Bubble from './components/bubble';
+import HeaderContent from './components/headercontent';
 
 const App = () => {
   const bubbles = [
@@ -24,15 +24,21 @@ const App = () => {
         ))}
       </div>
       <BrowserRouter>
-        <Navbar />
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/introduction" element={<Introduction />} />
-            <Route path="/background" element={<Background />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/appeal" element={<Appeal />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-          </Routes>
+        <>
+          <div className="header-wrapper">
+            <Navbar />
+            <HeaderContent />
+          </div>
+          <div className="body-wrapper">
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/appeal" element={<Appeal />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+            </Routes>
+          </div>
+        </>
       </BrowserRouter>
     </div>
   );

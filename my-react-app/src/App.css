@@ -7,6 +7,25 @@
   z-index: 1;
 }
 
+.header-wrapper {
+  background: linear-gradient(to right, #8ec5fc, #c3c4fc, #dec3fc, #fcc3e6);
+  color: white;
+}
+
+.body-wrapper {
+  text-align: center;
+}
+
+.page-header {
+  text-align: center;
+  padding: 0.5rem 0.5rem 0.5rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .background-bubbles {
   background-color: rgb(255, 197, 238);
   position: fixed;
