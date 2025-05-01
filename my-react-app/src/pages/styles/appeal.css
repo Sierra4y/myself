@@ -1,0 +1,59 @@
+.Appeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .Appeal-item {
+    background-color: #b7b7f5;
+    width: 100%;
+    max-width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'sans-serif';
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .Appeal-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .Appeal-item:nth-child(1) {
+    background-color: #b7b7f5;
+    color: #0c0c92;
+    align-self: flex-start;
+  }
+  
+  .Appeal-item:nth-child(2) {
+    background-color: #9ed1e5;
+    color: #02415a;
+    align-self: flex-end;
+  }
+  
+  .Appeal-item:nth-child(3) {
+    background-color: #b3e9c7;
+    color: #01501e;
+    align-self: flex-start;
+  }
+  
+  .Appeal-item h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .Appeal-item p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  

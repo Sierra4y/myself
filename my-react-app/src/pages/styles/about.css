@@ -1,0 +1,23 @@
+ .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    flex-direction: column;
+    background-color:rgba(255, 226, 246, 0.637);
+    padding-top: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 50px;
+  }
+  
+  .about-box {
+    background-color: transparent;
+    width: 50%;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .about-box p {
+    margin: 0;
+  }

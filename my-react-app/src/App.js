@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './components/bubble.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/navbar';

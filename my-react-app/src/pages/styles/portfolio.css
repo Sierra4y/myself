@@ -1,0 +1,23 @@
+  .Portfolio {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+    text-align: center;
+    color: blueviolet;
+    flex-direction: column;
+  }
+  
+  .Portfolio-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .Portfolio-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }

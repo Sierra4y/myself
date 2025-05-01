@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import bubbleImg from "../images/bubble.png";
-import "../App.css";
+import React, { useEffect, useState } from 'react';
+import bubbleImg from '../images/bubble.png';
+import '../App.css';
+import './bubble.css';
 
 const Bubble = ({ className }) => {
   const [isRemoved, setIsRemoved] = useState(false);
   const [popStyle, setPopStyle] = useState(null);
-  const [show, setShow] = useState(true);
   const [bubbleVisible, setBubbleVisible] = useState(true);
 
   const handleClick = (e) => {
@@ -15,30 +15,30 @@ const Bubble = ({ className }) => {
     const y = e.clientY;
 
     setBubbleVisible(false);
-
-    setPopStyle({
-      left: x,
-      top: y,
-    });
+    setPopStyle({ left: x, top: y });
 
     setTimeout(() => {
       setIsRemoved(true);
-      setShow(false);
       setPopStyle(null);
     }, 400);
   };
 
-    useEffect(() => {
-      if (!show) {
-        const timer = setTimeout(() => {
-          setIsRemoved(false);
-          setShow(true);
-          setBubbleVisible(true);
-        }, 1000);
+  useEffect(() => {
+    if (isRemoved) {
+      const timer = setTimeout(() => {
+        setIsRemoved(false);
+        setBubbleVisible(true);
+      }, 1000);
 
-        return () => clearTimeout(timer);
-      }
-    }, [show]);
+      return () => clearTimeout(timer);
+    }
+  }, [isRemoved]);
+
+  const handleAnimationEnd = () => {
+    if (!isRemoved) {
+      setIsRemoved(true);
+    }
+  };
 
   if (isRemoved) return null;
 
@@ -49,7 +49,8 @@ const Bubble = ({ className }) => {
         className={`${className}`}
         alt="bubble"
         onClick={handleClick}
-        style={{ 
+        onAnimationEnd={handleAnimationEnd}
+        style={{
           pointerEvents: "auto",
           opacity: bubbleVisible ? 1 : 0,
           transition: "opacity 0s",
